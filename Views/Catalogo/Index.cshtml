@@ -1,7 +1,10 @@
 ﻿@model List<Catalogo.Models.Item>
 <h1>Mi Catálogo</h1>
+<div class="rain"></div>
 <!-- Filtro por género -->
 <div>
+    
+
     <a asp-action="Index">Todos</a>
     @foreach (var gen in ViewBag.Generos as List<string>)
     {

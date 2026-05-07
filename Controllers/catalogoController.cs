@@ -36,7 +36,25 @@ namespace Catalogo.Controllers
                 Ano = 2017,
                 Consola = "PlayStation 4",
                 Descripcion = "Gloria a la humanidad."
-            }
+            },
+            new Item
+            {
+                Id = 4,
+                Titulo = "FURRY DAYS",
+                Genero = "no quieres saber ",
+                Ano = 2017,
+                Consola = "pc",
+                Descripcion = "es como dias de furrys."
+            },
+            new Item
+            {
+                Id = 5,
+                Titulo = "halo",
+                Genero = "shooter",
+                Ano = 2001,
+                Consola = "xbox",
+                Descripcion = "videojuego de disparos en primera persona."
+            },
         };
 
         // Lista — con filtro opcional por género

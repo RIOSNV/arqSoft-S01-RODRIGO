@@ -20,8 +20,11 @@ Esta aplicación permite gestionar y visualizar un catálogo de videojuegos clas
 * **Fuentes**: Google Fonts (Creepster) para el estilo temático.
 
 ##  Capturas de Pantalla
-Aquí puedes añadir las imágenes de tu aplicación:
-
-1. **Vista Principal (Catálogo)**: Muestra las tarjetas con efecto hover y el sistema de filtros.
-2. **Vista de Detalles**: Ficha técnica del juego con diseño de columnas profesional.
-3. **Efectos**: Visualización del fondo de lluvia y las animaciones de carga.
+menu de inicio de la aplicacion 
+<img width="1920" height="1080" alt="Captura de pantalla (21)" src="https://github.com/user-attachments/assets/2ec2bbd3-974f-493a-8079-95ec6b8596d7" />
+agregar un juego 
+<img width="1920" height="1080" alt="Captura de pantalla (22)" src="https://github.com/user-attachments/assets/10d24316-6f91-4f81-8e51-0437c4961c8f" />
+confimacion de agregacion 
+<img width="1920" height="1080" alt="Captura de pantalla (23)" src="https://github.com/user-attachments/assets/9a203b79-09e7-43df-99dc-7ee99fd101aa" />
+informacion del juego 
+<img width="1920" height="1080" alt="Captura de pantalla (24)" src="https://github.com/user-attachments/assets/0164a093-3d78-44bc-81a8-8b82d285c1a4" />

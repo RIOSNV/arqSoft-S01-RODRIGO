@@ -2,28 +2,35 @@
 
 @{
     ViewData["Title"] = "Mi Catálogo";
+    // Esto asegura que todos los géneros que hayas creado aparezcan como botones
+    var generosExistentes = Model.Select(i => i.Genero).Distinct().OrderBy(g => g).ToList();
 }
 
 <div class="container">
     <h1 class="text-center my-4 detail-title">MI CATÁLOGO</h1>
 
     <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-        <a asp-action="Index" class="btn btn-outline-info">Todos</a>
-        <a asp-action="Index" asp-route-genero="Hack and Slash" class="btn btn-outline-info">Hack and Slash</a>
-        <a asp-action="Index" asp-route-genero="Metroidvania" class="btn btn-outline-info">Metroidvania</a>
-        <a asp-action="Index" asp-route-genero="Action RPG" class="btn btn-outline-info">Action RPG</a>
-        <a asp-action="Index" asp-route-genero="Shooter" class="btn btn-outline-info">Shooter</a>
+        <a asp-action="Index" class="btn btn-outline-info @(Context.Request.Query["genero"].ToString() == "" ? "active" : "")">TODOS</a>
+        
+        @foreach (var genero in generosExistentes)
+        {
+            <a asp-action="Index"
+                   asp-route-genero="@genero"
+                   class="btn btn-outline-info @(Context.Request.Query["genero"] == genero ? "active" : "")">
+                @genero.ToUpper()
+            </a>
+        }
     </div>
 
     <div class="row g-4">
         @foreach (var item in Model)
         {
             <div class="col-md-4">
-                <div class="card h-100 card-hover-effect">
+                <div class="card h-100">
                     <div class="card-body d-flex flex-column text-center">
                         <h5 class="card-title">@item.Titulo</h5>
                         <h6 class="card-subtitle mb-3">@item.Genero</h6>
-                        <p class="card-text mt-auto text-white-50">Lanzado en: @item.Ano</p>
+                        <p class="card-text mt-auto text-white-50">LANZADO EN: @item.Ano</p>
                         <a asp-action="Detalle" asp-route-id="@item.Id" class="btn btn-primary w-100 mt-3">VER DETALLES</a>
                     </div>
                 </div>

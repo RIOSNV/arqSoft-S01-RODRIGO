@@ -9,6 +9,7 @@
                     e.preventDefault();
                     const targetUrl = link.href;
 
+                    // Aplicamos la animación de salida
                     content.classList.remove('slide-in');
                     content.classList.add('slide-out');
 

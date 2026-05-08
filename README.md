@@ -21,10 +21,12 @@ Esta aplicación permite gestionar y visualizar un catálogo de videojuegos clas
 
 ##  Capturas de Pantalla
 menu de inicio de la aplicacion 
-<img width="1920" height="1080" alt="Captura de pantalla (21)" src="https://github.com/user-attachments/assets/2ec2bbd3-974f-493a-8079-95ec6b8596d7" />
+<img width="1920" height="1080" alt="Captura de pantalla (25)" src="https://github.com/user-attachments/assets/2f1455ca-73ed-4451-95b6-a20f4d9ff628" />
 agregar un juego 
-<img width="1920" height="1080" alt="Captura de pantalla (22)" src="https://github.com/user-attachments/assets/10d24316-6f91-4f81-8e51-0437c4961c8f" />
-confimacion de agregacion 
-<img width="1920" height="1080" alt="Captura de pantalla (23)" src="https://github.com/user-attachments/assets/9a203b79-09e7-43df-99dc-7ee99fd101aa" />
+<img width="1920" height="1080" alt="Captura de pantalla (26)" src="https://github.com/user-attachments/assets/fe0c75a7-530c-4375-b3da-08bbdb5b4108" />
+confimacion del juego 
+<img width="1920" height="1080" alt="Captura de pantalla (27)" src="https://github.com/user-attachments/assets/935fbf6f-609a-4791-8c20-b6dcf8661b0e" />
 informacion del juego 
-<img width="1920" height="1080" alt="Captura de pantalla (24)" src="https://github.com/user-attachments/assets/0164a093-3d78-44bc-81a8-8b82d285c1a4" />
+<img width="1920" height="1080" alt="Captura de pantalla (28)" src="https://github.com/user-attachments/assets/8f0bbd8d-27bf-49cb-ad30-702c7f86ff05" />
+
+

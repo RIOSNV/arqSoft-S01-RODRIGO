@@ -1,27 +1,47 @@
 ﻿@model List<Catalogo.Models.Item>
-<h1>Mi Catálogo</h1>
-<div class="rain"></div>
-<!-- Filtro por género -->
-<div>
-    
-
-    <a asp-action="Index">Todos</a>
-    @foreach (var gen in ViewBag.Generos as List<string>)
-    {
-        <span> | </span>
-        <a asp-action="Index" asp-route-genero="@gen">@gen</a>
-    }
+<div class="text-center">
+    <h1 class="display-4 mb-4 text-white creepster-regular">Mi Catálogo</h1>
 </div>
-<hr />
-<!-- Lista de items -->
-<ul>
-    @foreach (var item in Model)
-    {
-        <li>
-            <a asp-action="Detalle" asp-route-id="@item.Id">@item.Titulo</a>
-            -- @item.Genero (@item.Ano)
-        </li>
-    }
-</ul>
-<hr />
-<a asp-action="Agregar">+ Agregar Videojuego</a>
+
+    <div class="rain"></div>
+
+    <!-- Filtro por género con botones -->
+    <div class="mb-4">
+        <div class="btn-group flex-wrap shadow" role="group">
+            <a asp-action="Index" class="btn btn-outline-info">Todos</a>
+            @foreach (var gen in ViewBag.Generos as List<string>)
+            {
+                <a asp-action="Index" asp-route-genero="@gen" class="btn btn-outline-info">@gen</a>
+            }
+        </div>
+    </div>
+
+    <hr class="border-secondary" />
+
+    <!-- Grid de Tarjetas (Cards) -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100 bg-dark text-white border-secondary shadow-sm card-hover-effect">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">@item.Titulo</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@item.Genero</h6>
+                        <p class="card-text small">Lanzado en: @item.Ano</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-secondary">
+                        <a asp-action="Detalle" asp-route-id="@item.Id" class="btn btn-sm btn-primary w-100">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <hr class="border-secondary mt-5" />
+
+    <div class="pb-5">
+        <a asp-action="Agregar" class="btn btn-success shadow-lg">
+            <i class="bi bi-plus-circle"></i> + Agregar Videojuego
+        </a>
+    </div>
+</div>
